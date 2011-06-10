@@ -22,6 +22,7 @@ class Boot {
     // Build SiteMap
     val entries = List(
       Menu.i("Home") / "index", // the simple way to declare a menu
+      Menu.i("Memoize") / "memoize",
 
       // more complex because this menu allows anything in the
       // /static path to be visible
@@ -35,7 +36,7 @@ class Boot {
     // Use jQuery 1.4
     LiftRules.jsArtifacts = net.liftweb.http.js.jquery.JQuery14Artifacts
 
-    //Show the spinny image when an Ajax call starts
+    //Show the spinny image when an Memoize call starts
     LiftRules.ajaxStart =
       Full(() => LiftRules.jsArtifacts.show("ajax-loader").cmd)
     

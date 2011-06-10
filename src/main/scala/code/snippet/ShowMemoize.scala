@@ -12,8 +12,7 @@ object ShowMemoize {
       // deal with the "one" div
       "#one" #> SHtml.idMemoize(one =>
         "span *+" #> now.toString & // display the time
-        "button [onclick]" #> SHtml.ajaxInvoke(one.setHtml _) &
-        "a [onclick]" #> SHtml.ajaxInvoke(one.latestElem.setHtml _)) & // redraw
+        "button [onclick]" #> SHtml.ajaxInvoke(one.setHtml _)) & // redraw
       // deal with the "two" div
       "#two" #> SHtml.idMemoize(two => // the "two" div
         "ul" #> {
