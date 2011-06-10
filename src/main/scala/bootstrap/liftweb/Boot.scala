@@ -22,7 +22,9 @@ class Boot {
     // Build SiteMap
     val entries = List(
       Menu.i("Home") / "index", // the simple way to declare a menu
-      Menu.i("Memoize") / "memoize",
+      Menu.i("Ajax") / "ajax" submenus(
+        Menu.i("Memoize") / "memoize",
+        Menu.i("IdMemoize") / "idMemoize"),
 
       // more complex because this menu allows anything in the
       // /static path to be visible

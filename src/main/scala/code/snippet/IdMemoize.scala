@@ -3,7 +3,7 @@ package code.snippet
 import net.liftweb.http._
 import net.liftweb.util.Helpers._
 
-object ShowMemoize {
+object IdMemoize {
   
   def render =
     "div" #> SHtml.idMemoize(outer =>
