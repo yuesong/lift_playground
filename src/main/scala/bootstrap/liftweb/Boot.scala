@@ -25,6 +25,7 @@ class Boot {
       Menu.i("Ajax") / "ajax" submenus(
         Menu.i("Memoize") / "memoize",
         Menu.i("IdMemoize") / "idMemoize"),
+      Menu.i("Pagination") / "pagination",
 
       // more complex because this menu allows anything in the
       // /static path to be visible
