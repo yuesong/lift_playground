@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default;at=content">
+
+    <h2>Sorted Pagination</h2>
+
+    <div class="lift:SortedPagination.paginate">
+        <table>
+            <thead>
+            <tr>
+                <th><sort:id>ID</sort:id></th>
+                <th><sort:title>Title</sort:title></th>
+                <th><sort:platform>Platform</sort:platform></th>
+            </tr>
+            </thead>
+            <tbody class="lift:SortedPagination.render">
+            <tr>
+                <td class="id">[ID]</td>
+                <td class="title">[Title]</td>
+                <td class="platform">[Platform]</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <nav:first></nav:first> | <nav:prev></nav:prev> | <nav:allpages></nav:allpages> | <nav:next></nav:next> | <nav:last></nav:last> | <nav:records></nav:records>
+    </div>
+    
+</body>
+</html>
+
