@@ -28,6 +28,8 @@ class Boot {
       Menu.i("Pagination") / "pagination" submenus(
         Menu.i("Unsorted") / "unsortedPagination",
         Menu.i("Sorted") / "sortedPagination"),
+      Menu.i("Form") / "form" submenus(
+        Menu.i("Create/Edit Form") / "createEditForm"),
 
       // more complex because this menu allows anything in the
       // /static path to be visible

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body class="lift:content_id=main">
+<div id="main" class="lift:surround?with=default;at=content">
+
+    <h2>Create/Edit Form</h2>
+
+    <p>
+        Same form used for creating and editing. <a href="createEditForm">Without id param</a> the form creates a new
+        object. <a href="createEditForm?id=2">With one</a>, it edits an existing object.
+    </p>
+
+
+    <form class="lift:CreateEditForm?form=POST">
+        <ul>
+            <li><label>Title: <input id="title" type="text"></label></li>
+        </ul>
+        <input id="save" type="submit" value="Save">
+    </form>
+
+
+</div>
+</body>
+</html>
+

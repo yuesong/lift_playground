@@ -3,16 +3,7 @@ package code.snippet
 import net.liftweb.http._
 import net.liftweb.util.Helpers._
 import java.lang.IllegalArgumentException
-
-case class Game(id: Int, title: String, platform: String)
-
-object Game {
-  val all = List(Game(1, "Gears of War", "Xbox 360"), Game(2, "Fallout 3", "PC"), Game(3, "Little Big Planet", "PS3"),
-    Game(4, "Halo 3", "Xbox 360"), Game(5, "Killzone", "PS3"), Game(6, "God of War 3", "PS3"),
-    Game(7, "Call of Duty: Black Ops", "PC"))
-
-  val count = all.size
-}
+import code.model.Game
 
 class UnsortedPagination extends PaginatorSnippet[Game] {
 
